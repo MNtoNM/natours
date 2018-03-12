@@ -1,0 +1,15 @@
+/* Normalize using universal selector */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* force inheritance from body via universal selector. Box-sizing is not normally inherited */
+}
+
+html { /* Root font size should be declared here in the html element*/
+  font-size: 62.5%; // This brings 1rem dowm from 16px to 10px. It makes the math easier.
+}
+body {
+  box-sizing: border-box; /* Don't add padding or borders to element height/width */
+}
